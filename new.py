@@ -19,8 +19,13 @@ lista.insert(2, "Java")
 lista.insert(3, "C++")
 boton = tkinter.Button(ventana, text="Aceptar", command=imprimir)
 boton.grid(columnspan=2, row=2)
-def imprimir():
-    print("Hola mundo")
+checkbox = tkinter.Checkbutton(ventana, text="Acepto los terminos y condiciones")
+checkbox.grid(columnspan=2, row=3)
+radio = tkinter.Radiobutton(ventana, text="Masculino")
+radio.grid(column=0, row=4)
+radio = tkinter.Radiobutton(ventana, text="Femenino")
+radio.grid(column=1, row=4)
+
 ventana.mainloop()
 
 
